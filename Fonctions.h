@@ -3,6 +3,8 @@
 
 #include <string>
 
+using namespace std;
+
 struct Questionnaire 
 {
     std::string theme;
@@ -11,9 +13,9 @@ struct Questionnaire
 };
 
 //Fonctions des questionnaires
-void creerQuestionnaire(std::string theme, std::string nomFichier);
-void lireQuestionnaire(std::string nomFichier, Questionnaire& questionnaire);
-void analyserQuestionnaires(Questionnaire questionnaires[], int nbQuestionnaires, std::string nom);
-void genererRapport(std::string nom, Questionnaire questionnaires[], int nbQuestionnaires);
+void creerQuestionnaire(string theme, string nomFichier);
+void lireQuestionnaire(string nomFichier, Questionnaire& questionnaire);
+void analyserQuestionnaires(Questionnaire questionnaires[], int nbQuestionnaires, string nom);
+void genererRapport(string nom, Questionnaire questionnaires[], int nbQuestionnaires);
 
 #endif // FONCTIONS_H
