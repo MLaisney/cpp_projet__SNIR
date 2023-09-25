@@ -11,5 +11,11 @@ int main()
     getline (cin, nom);
     cout << nom << endl;
 
+    // Création des questionnaires
+    creerQuestionnaire("Mathematiques", "mathematiques.txt");
+    creerQuestionnaire("Histoire", "histoire.txt");
+    creerQuestionnaire("Geographie", "geographie.txt");
+    creerQuestionnaire("Science", "science.txt");
+
     return 0;
 }
