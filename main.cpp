@@ -25,5 +25,8 @@ int main()
     lireQuestionnaire("geographie.txt", questionnaires[2]);
     lireQuestionnaire("science.txt", questionnaires[3]);
 
+    // Analyser les questionnaires
+    analyserQuestionnaires(questionnaires, 4, nom);
+
     return 0;
 }
