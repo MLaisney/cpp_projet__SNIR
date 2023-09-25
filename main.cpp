@@ -6,7 +6,8 @@ using namespace std;
 
 int main()
 {
-    string nom; //Entrée de l'indentité 
+    //Entrée de l'indentité 
+    string nom;
     cout << "Entrez votre nom : ";
     getline (cin, nom);
     cout << nom << endl;
@@ -16,6 +17,13 @@ int main()
     creerQuestionnaire("Histoire", "histoire.txt");
     creerQuestionnaire("Geographie", "geographie.txt");
     creerQuestionnaire("Science", "science.txt");
+
+    // Lire les questionnaires
+    Questionnaire questionnaires[4];
+    lireQuestionnaire("mathematiques.txt", questionnaires[0]);
+    lireQuestionnaire("histoire.txt", questionnaires[1]);
+    lireQuestionnaire("geographie.txt", questionnaires[2]);
+    lireQuestionnaire("science.txt", questionnaires[3]);
 
     return 0;
 }
