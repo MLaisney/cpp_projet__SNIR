@@ -3,6 +3,8 @@ Par : Laisney Melvyn, le 25/09/2023*/
 
 #include "Fonctions.h"
 
+using namespace std;
+
 int main() {
     std::string nom;
     demanderIdentite(nom);
@@ -18,7 +20,7 @@ int main() {
         fichier << "Mauvaises réponses : " << mauvaisesReponses << std::endl;
         fichier.close();
     } else {
-        std::cerr << "Impossible d'ouvrir le fichier pour enregistrer les résultats." << std::endl;
+        std:: cout << "Impossible d'ouvrir le fichier pour enregistrer les résultats." << std::endl;
     }
 
     return 0;
