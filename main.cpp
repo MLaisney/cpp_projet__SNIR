@@ -2,7 +2,7 @@
 Par : Laisney Melvyn, le 25/09/2023*/
 
 //appel des librairies
-#include "Fonctions.h"
+#include "Fonctions.cpp"
 #include <fstream>
 #include <iostream>
 #include <string>
@@ -23,11 +23,11 @@ int main()
     ofstream fichier("resultats.txt");
     if (fichier.is_open()) { //ouverture du fichier 
         fichier << "Nom : " << nom << endl; //écriture du fichier 
-        fichier << "Bonnes réponses : " << bonnesReponses << endl;
-        fichier << "Mauvaises réponses : " << mauvaisesReponses << endl;
+        fichier << "Bonnes reponses : " << bonnesReponses << endl;
+        fichier << "Mauvaises reponses : " << mauvaisesReponses << endl;
         fichier.close(); //fermeture du fichier
     } else { //affichage du message d'erreur d'ouverture
-        cout << "Impossible d'ouvrir le fichier pour enregistrer les résultats." << endl;
+        cout << "Impossible d'ouvrir le fichier pour enregistrer les resultats." << endl;
     }
 
     return 0;
