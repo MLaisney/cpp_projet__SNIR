@@ -5,22 +5,23 @@ Par : Laisney Melvyn, le 25/09/2023*/
 
 using namespace std;
 
-int main() {
-    std::string nom;
+int main()
+{
+    string nom;
     demanderIdentite(nom);
 
     int bonnesReponses = 0;
     int mauvaisesReponses = 0;
     genererQuestionnaire(bonnesReponses, mauvaisesReponses);
 
-    std::ofstream fichier("resultats.txt");
+    ofstream fichier("resultats.txt");
     if (fichier.is_open()) {
-        fichier << "Nom : " << nom << std::endl;
-        fichier << "Bonnes réponses : " << bonnesReponses << std::endl;
-        fichier << "Mauvaises réponses : " << mauvaisesReponses << std::endl;
+        fichier << "Nom : " << nom << endl;
+        fichier << "Bonnes réponses : " << bonnesReponses << endl;
+        fichier << "Mauvaises réponses : " << mauvaisesReponses << endl;
         fichier.close();
     } else {
-        std:: cout << "Impossible d'ouvrir le fichier pour enregistrer les résultats." << std::endl;
+        cout << "Impossible d'ouvrir le fichier pour enregistrer les résultats." << std::endl;
     }
 
     return 0;

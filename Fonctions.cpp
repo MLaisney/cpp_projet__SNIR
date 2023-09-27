@@ -5,9 +5,11 @@ Par : Laisney Melvyn, le 25/09/2023*/
 #include <iostream>
 #include <fstream>
 
-void demanderIdentite(std::string& nom) {
-    std::cout << "Entrez votre nom : ";
-    std::getline(std::cin, nom);
+using namespace std;
+
+void demanderIdentite(string& nom) {
+    cout << "Entrez votre nom : ";
+    getline(std::cin, nom);
 }
 
 void genererQuestionnaire(int& bonnesReponses, int& mauvaisesReponses) {
@@ -27,29 +29,29 @@ void genererQuestionnaire(int& bonnesReponses, int& mauvaisesReponses) {
         switch (operation) {
             case 0:
                 reponseCorrecte = a + b;
-                std::cout << "Question " << i << ": " << a << " + " << b << " = ?";
+                cout << "Question " << i << ": " << a << " + " << b << " = ?";
                 break;
             case 1:
                 reponseCorrecte = a - b;
-                std::cout << "Question " << i << ": " << a << " - " << b << " = ?";
+                cout << "Question " << i << ": " << a << " - " << b << " = ?";
                 break;
             case 2:
                 reponseCorrecte = a * b;
-                std::cout << "Question " << i << ": " << a << " * " << b << " = ?";
+                cout << "Question " << i << ": " << a << " * " << b << " = ?";
                 break;
             case 3:
                 reponseCorrecte = a / b;
-                std::cout << "Question " << i << ": " << a << " / " << b << " (arrondi à l'entier le plus proche) = ?";
+                cout << "Question " << i << ": " << a << " / " << b << " (arrondi à l'entier le plus proche) = ?";
                 break;
         }
 
-        std::cin >> reponseUtilisateur;
+        cin >> reponseUtilisateur;
 
         if (reponseUtilisateur == reponseCorrecte) {
-            std::cout << "Bonne réponse !" << std::endl;
+            cout << "Bonne réponse !" << std::endl;
             bonnesReponses++;
         } else {
-            std::cout << "Mauvaise réponse. La réponse correcte était : " << reponseCorrecte << std::endl;
+            cout << "Mauvaise réponse. La réponse correcte était : " << reponseCorrecte << std::endl;
             mauvaisesReponses++;
         }
     }
