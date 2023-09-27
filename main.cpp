@@ -2,7 +2,6 @@
 Par : Laisney Melvyn, le 25/09/2023*/
 
 #include "Fonctions.h"
-using namespace std;
 
 int main() {
     std::string nom;
@@ -13,15 +12,13 @@ int main() {
     genererQuestionnaire(bonnesReponses, mauvaisesReponses);
 
     std::ofstream fichier("resultats.txt");
-    if (monFlux.is_open())
-    {
-        monFlux << "Nom : " << nom << endl;
-        monFlux << "Bonnes réponses : " << bonnesReponses << endl;
-        monFlux << "Mauvaises réponses : " << mauvaisesReponses << endl;
-        monFlux.close();
-    } 
-    else {
-        cerr << "Impossible d'ouvrir le fichier pour enregistrer les résultats." << endl; //Message d'erreur
+    if (fichier.is_open()) {
+        fichier << "Nom : " << nom << std::endl;
+        fichier << "Bonnes réponses : " << bonnesReponses << std::endl;
+        fichier << "Mauvaises réponses : " << mauvaisesReponses << std::endl;
+        fichier.close();
+    } else {
+        std::cerr << "Impossible d'ouvrir le fichier pour enregistrer les résultats." << std::endl;
     }
 
     return 0;
