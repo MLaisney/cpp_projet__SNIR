@@ -6,6 +6,8 @@ Par : Laisney Melvyn, le 25/09/2023*/
 
 #include <string>
 
+using namespace std;
+
 void demanderIdentite(string& nom);
 void genererQuestionnaire(int& bonnesReponses, int& mauvaisesReponses);
 
