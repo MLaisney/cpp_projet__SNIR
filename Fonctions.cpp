@@ -52,10 +52,10 @@ void genererQuestionnaire(int& bonnesReponses, int& mauvaisesReponses) {
         cin >> reponseUtilisateur; //recupération des réponses de l'utilisateur
 
         if (reponseUtilisateur == reponseCorrecte) { //comparaison
-            cout << "Bonne réponse !" << endl; //bonne réponse
+            cout << "Bonne reponse !" << endl; //bonne réponse
             bonnesReponses++; 
         } else {//mauvaise réponse
-            cout << "Mauvaise réponse. La réponse correcte était : " << reponseCorrecte << endl;
+            cout << "Mauvaise reponse. La reponse correcte etait : " << reponseCorrecte << endl;
             mauvaisesReponses++;
         }
     }
