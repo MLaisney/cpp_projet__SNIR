@@ -1,30 +1,53 @@
+/*Nom : Questionnaire des SNIR
+Par : Laisney Melvyn, le 25/09/2023*/
+
 #include "Fonctions.h"
 #include <iostream>
 #include <fstream>
 
 using namespace std;
 
-// Fonction de la création des fichiers
-void creerQuestionnaire(string theme, string nomFichier)
+void demanderIdentite(string& nom)
 {
-    // Si le fichier est bon.
-    ofstream fichier(nomFichier);
-    if (fichier.is_open())
+    cout << "Entre votre nom : ";
+    getline(cin, nom);
+}
+
+void genererQuestionnaire(int& bonnesResponses, int& mauvaisesReponses)
+{
+    bonnesResponses = 0;
+    mauvaisesReponses = 0;
+
+    for(int i = 1; i <=20; i++)
     {
-        int bonnesReponses, mauvaisesReponses;
-        cout << "Questionnaire sur le theme : " << theme << endl;
-        cout << "Nombre de bonnes reponses : ";
-        cin >> bonnesReponses;
-        cout << "Nombre de mauvaises reponses : ";
-        cin >> mauvaisesReponses;
-        fichier << theme << endl;
-        fichier << bonnesReponses << endl;
-        fichier << mauvaisesReponses << endl;
-        fichier.close(); // Fermeture du fichier après fermeture. 
-    }
-    // Si le fichier n'est pas bon.
-    else 
-    {
-        cout << "Erreur lors de l'ouverture du fichier";
-    }
+        int reponseUtilisateur;
+        int reponseCorrecte;
+
+        int a = rand() % 10+1;
+        int b = rand() % 10+1;
+        char operation = rand() % 4;
+
+        switch (operation)
+        {
+        case 0:
+            reponseCorrecte = a + b;
+            cout << "Question " << i << ":" << a << "+" << b << "= ?";
+            break;
+        
+        default:
+            break;
+        }
+
+        cin >> reponseUtilisateur;
+        if(reponseUtilisateur == reponseCorrecte)
+        {
+            cout << "Bonne réponse !" << endl;
+            bonnesResponses++;
+        }
+        else
+        {
+            cout << "Mauvaise réponse. La réponse correcte était : " << reponseCorrecte << endl;
+            mauvaisesReponses++;
+        }
+}
 }
