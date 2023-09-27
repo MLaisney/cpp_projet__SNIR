@@ -20,10 +20,10 @@ void genererQuestionnaire(int& bonnesReponses, int& mauvaisesReponses) {
         int reponseUtilisateur;
         int reponseCorrecte;
 
-        // Générer une question (par exemple, une opération mathématique)
+        // Générer une question
         int a = rand() % 10 + 1;
         int b = rand() % 10 + 1;
-        char operation = rand() % 4; // 0: +, 1: -, 2: *, 3: /
+        char operation = rand() % 4;
 
         
         switch (operation) {
@@ -48,10 +48,10 @@ void genererQuestionnaire(int& bonnesReponses, int& mauvaisesReponses) {
         cin >> reponseUtilisateur;
 
         if (reponseUtilisateur == reponseCorrecte) {
-            cout << "Bonne réponse !" << std::endl;
+            cout << "Bonne réponse !" << endl;
             bonnesReponses++;
         } else {
-            cout << "Mauvaise réponse. La réponse correcte était : " << reponseCorrecte << std::endl;
+            cout << "Mauvaise réponse. La réponse correcte était : " << reponseCorrecte << endl;
             mauvaisesReponses++;
         }
     }

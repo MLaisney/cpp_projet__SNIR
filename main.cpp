@@ -23,7 +23,7 @@ int main()
         fichier << "Mauvaises réponses : " << mauvaisesReponses << endl;
         fichier.close();
     } else {
-        cout << "Impossible d'ouvrir le fichier pour enregistrer les résultats." << std::endl;
+        cout << "Impossible d'ouvrir le fichier pour enregistrer les résultats." << endl;
     }
 
     return 0;
