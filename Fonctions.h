@@ -4,18 +4,8 @@
 #include <string>
 
 using namespace std;
-
-struct Questionnaire 
-{
-    std::string theme;
-    int bonnesReponses;
-    int mauvaisesReponses;
-};
-
-//Fonctions des questionnaires
-void creerQuestionnaire(string theme, string nomFichier);
-void lireQuestionnaire(string nomFichier, Questionnaire& questionnaire);
-void analyserQuestionnaires(Questionnaire questionnaires[], int nbQuestionnaires, string nom);
-void genererRapport(string nom, Questionnaire questionnaires[], int nbQuestionnaires);
+//Liens des fonctions
+void demanderIdentite(string& nom);
+void genererQuestionnaire(int& bonnesReponses, int& mauvaisesReponses);
 
 #endif // FONCTIONS_H
