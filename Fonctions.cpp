@@ -59,4 +59,5 @@ void genererQuestionnaire(int& bonnesReponses, int& mauvaisesReponses) {
             mauvaisesReponses++;
         }
     }
+    cout << "Le questionnaire est fini ! Vous pouvez voir le nombre de bonne et mauvaise reponse dans le fichier resultat.txt" << endl;
 }
