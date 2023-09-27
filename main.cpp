@@ -4,6 +4,7 @@ Par : Laisney Melvyn, le 25/09/2023*/
 #include "Fonctions.h"
 #include <fstream>
 #include <iostream>
+#include <string>
 
 using namespace std;
 

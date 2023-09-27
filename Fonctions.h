@@ -5,6 +5,8 @@ Par : Laisney Melvyn, le 25/09/2023*/
 #define FONCTIONS_H
 
 #include <string>
+#include <iostream>
+#include <fstream>
 
 using namespace std;
 
