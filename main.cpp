@@ -20,7 +20,7 @@ int main()
     int mauvaisesReponses = 0;
     genererQuestionnaire(bonnesReponses, mauvaisesReponses); //appel de la fonction du questionnaire
 
-    ofstream fichier("C:\Users\Admin\Documents\Laisney\SNIR_Questionnaire\Sortie\resultats.txt");
+    ofstream fichier("C:/Users/Admin/Documents/Laisney/SNIR_Questionnaire/Sortie/resultats.txt");
     if (fichier.is_open()) { //ouverture du fichier 
         fichier << "Nom : " << nom << endl; //écriture du fichier 
         fichier << "Bonnes reponses : " << bonnesReponses << endl;
