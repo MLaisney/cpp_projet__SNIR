@@ -12,7 +12,7 @@ using namespace std;
 //configuration de la fonction de l'indentité
 void demanderIdentite(string& nom) {
     cout << "Entrez votre nom : ";
-    getline(std::cin, nom);
+    getline(cin, nom);
 }
 //configuration de la fonction des questions/réponses
 void genererQuestionnaire(int& bonnesReponses, int& mauvaisesReponses) {
