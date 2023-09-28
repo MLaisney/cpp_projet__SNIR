@@ -28,7 +28,7 @@ void genererQuestionnaire(int& bonnesReponses, int& mauvaisesReponses) {
         par une valeur aléatoire*/ 
         int a = rand() % 10 + 1;
         int b = rand() % 10 + 1;
-        char operation = rand() % 4;
+        char operation = rand() % 4; //choix de l'opération de façon aléatoire
 
         switch (operation) { //ecriture des questions
             case 0:
@@ -61,4 +61,3 @@ void genererQuestionnaire(int& bonnesReponses, int& mauvaisesReponses) {
     }
     cout << "Le questionnaire est fini ! Vous pouvez voir le nombre de bonne et mauvaise reponse dans le fichier resultat.txt" << endl;
 }
-//test
