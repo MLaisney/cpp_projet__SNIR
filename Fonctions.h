@@ -12,5 +12,4 @@ void demanderIdentite(string& nom);
 void genererQuestionnaire(int& bonnesReponses, int& mauvaisesReponses);
 #include "Fonctions.cpp"
 
-
 #endif // FONCTIONS_H

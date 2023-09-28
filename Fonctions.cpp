@@ -19,6 +19,8 @@ void genererQuestionnaire(int& bonnesReponses, int& mauvaisesReponses) {
     bonnesReponses = 0;
     mauvaisesReponses = 0;
 
+    cout << "Entrez aux questionnaire avec vos reponses. Attention ! Si vous mettez un nombre decimal le programme se fermera automatiquement." << endl;
+
     for(int i = 1; i <= 20; ++i) {
         //initialisation des variables réponses
         int reponseUtilisateur;
