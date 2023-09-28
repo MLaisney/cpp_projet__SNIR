@@ -2,7 +2,7 @@
 Par : Laisney Melvyn, le 25/09/2023*/
 
 //appel des librairies
-#include "Fonctions.cpp"
+#include "Fonctions.h"
 #include <fstream>
 #include <iostream>
 #include <string>

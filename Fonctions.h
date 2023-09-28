@@ -10,5 +10,6 @@ using namespace std;
 //repertoire des fonctions
 void demanderIdentite(string& nom);
 void genererQuestionnaire(int& bonnesReponses, int& mauvaisesReponses);
+#include "Fonctions.cpp"
 
 #endif // FONCTIONS_H
